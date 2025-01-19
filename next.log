@@ -1,0 +1,337 @@
+nohup: ignoring input
+
+> next-app@0.1.0 dev
+> next dev --turbopack --hostname 0.0.0.0
+
+   ▲ Next.js 15.1.5 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 1321ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.5s
+ GET / 200 in 2802ms
+ GET / 200 in 47ms
+ GET / 200 in 38ms
+ ✓ Compiled in 57ms
+ ⚠ Fast Refresh had to perform a full reload when [next]/entry/page-loader.ts { PAGE => "[project]/pages/index.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled / in 141ms
+ GET / 200 in 172ms
+ ✓ Compiled /categories in 180ms
+ GET /categories 200 in 237ms
+ ✓ Compiled /category/[slug] in 176ms
+TypeError: Cannot read properties of null (reading 'name')
+    at Category (pages/category/[slug].js:33:37)
+  31 |     return (
+  32 |         <div>
+> 33 |             <h1>Категория: {category.name}</h1>
+     |                                     ^
+  34 |             <ul>
+  35 |                 {category.posts.nodes.map((post) => (
+  36 |                     <li key={post.id}>
+ ⨯ TypeError: Cannot read properties of null (reading 'name')
+    at Category (pages/category/[slug].js:33:37)
+  31 |     return (
+  32 |         <div>
+> 33 |             <h1>Категория: {category.name}</h1>
+     |                                     ^
+  34 |             <ul>
+  35 |                 {category.posts.nodes.map((post) => (
+  36 |                     <li key={post.id}>
+ ⨯ TypeError: Cannot read properties of null (reading 'name')
+    at Category (pages/category/[slug].js:33:37)
+  31 |     return (
+  32 |         <div>
+> 33 |             <h1>Категория: {category.name}</h1>
+     |                                     ^
+  34 |             <ul>
+  35 |                 {category.posts.nodes.map((post) => (
+  36 |                     <li key={post.id}> {
+  page: '/category/[slug]'
+}
+ ✓ Compiled /_error in 237ms
+ GET /category/[slug] 500 in 1063ms
+ ✓ Compiled in 28ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 18ms
+ ✓ Compiled /category/[slug] in 21ms
+ GET /category/[slug] 200 in 67ms
+ ✓ Compiled in 37ms
+ ⚠ Fast Refresh had to perform a full reload when ./pages/category/[slug].js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /category/[slug] in 25ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/[slug]'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/[slug]'
+}
+ GET /category/[slug] 500 in 242ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/[slug]'
+}
+ GET /category/[slug] 500 in 396ms
+ GET /category 404 in 17ms
+ GET /category 404 in 15ms
+ GET /categories 200 in 39ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/news'
+}
+ GET /category/news 500 in 330ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 75ms
+ GET /category 404 in 39ms
+ ✓ Compiled /categories in 29ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/news'
+}
+ GET /_next/data/development/categories.json 200 in 349ms
+ GET /category/news 500 in 377ms
+ GET /categories 200 in 34ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/news'
+}
+ GET /category/news 500 in 331ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 29ms
+ ⚠ Fast Refresh had to perform a full reload when ./pages/categories.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/news'
+}
+ ✓ Compiled in 93ms
+ GET /category/news 500 in 299ms
+ ✓ Compiled /categories in 16ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ ⚠ Fast Refresh had to perform a full reload when ./pages/categories.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /categories 200 in 430ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 59ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 28ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/news'
+}
+ GET /category/news 500 in 318ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 29ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/news'
+}
+ GET /category/news 500 in 161ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/%D0%B1%D0%B5%D0%B7-%D1%80%D1%83%D0%B1%D1%80%D0%B8%D0%BA%D0%B8'
+}
+ GET /category/%D0%B1%D0%B5%D0%B7-%D1%80%D1%83%D0%B1%D1%80%D0%B8%D0%BA%D0%B8 500 in 181ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/reviews'
+}
+ GET /category/reviews 500 in 151ms
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"]
+ ⨯ [Error: The default export is not a React Component in page: "/category/[slug]"] {
+  page: '/category/news'
+}
+ GET /category/news 500 in 354ms
+ ✓ Compiled in 5ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /category/[slug] in 68ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /category/news 200 in 158ms
+ GET /category/news 200 in 117ms
+ GET /category/news 200 in 25ms
+ GET /category/reviews 200 in 89ms
+ GET /category/news 200 in 25ms
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ✓ Compiled in 349ms
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app (hmr-entry) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app (hmr-entry) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app (hmr-entry) changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /category 500 in 419ms
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ✓ Compiled /categories in 221ms
+ GET /category 500 in 251ms
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"] {
+  page: '/category/news'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"] {
+  page: '/categories'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"] {
+  page: '/category/news'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"] {
+  page: '/categories'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ GET /_next/data/development/category/news.json?slug=news 500 in 1891ms
+ GET /categories 500 in 1900ms
+ GET /category/news 500 in 1900ms
+ GET /_next/data/development/categories.json 500 in 1743ms
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"] {
+  page: '/category/news'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ ⨯ [Error: The default export is not a React Component in page: "/_app"]
+ GET /category/news 500 in 618ms
+ ✓ Compiled in 174ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /category/news 200 in 213ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /category/news 200 in 36ms
+ GET /category 404 in 53ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 442ms
+ GET /category/news 200 in 32ms
+ ✓ Compiled in 78ms
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 107ms
+ GET /category/news 200 in 136ms
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /category 404 in 77ms
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when ./pages/_app.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /categories 200 in 155ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /category 404 in 122ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 125ms
+ ✓ Compiled in 153ms
+ GET /category/news 200 in 26ms
+ GET /category/news 200 in 25ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 24ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 28ms
+ ✓ Compiled in 61ms
+ ⚠ Fast Refresh had to perform a full reload when [next]/entry/page-loader.ts { PAGE => "[project]/pages/category/[slug].js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /category/[slug] in 133ms
+ GET /category/news 200 in 153ms
+ GET /_next/data/development/category/news.json?slug=news 200 in 30ms
+ ✓ Compiled /contact in 147ms
+ GET /contact 200 in 230ms
+ GET /contact 200 in 48ms
+ ✓ Compiled in 176ms
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ GET /category 500 in 370ms
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"] {
+  page: '/contact'
+}
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 596ms
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"] {
+  page: '/contact'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"] {
+  page: '/categories'
+}
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ ⨯ [Error: The default export is not a React Component in page: "/_document"]
+ GET /contact 500 in 1317ms
+ GET /categories 500 in 1320ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 176ms
+ GET /category 404 in 115ms
+ ✓ Compiled /contact in 147ms
+ GET /contact 200 in 274ms
+DEBUG: Categories data: {
+  categories: {
+    __typename: 'RootQueryToCategoryConnection',
+    nodes: [ [Object], [Object], [Object] ]
+  }
+}
+ GET /categories 200 in 425ms
+ GET /contact 200 in 25ms
+ GET /contact 200 in 24ms
+ GET /category 404 in 31ms
