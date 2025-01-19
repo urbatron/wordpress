@@ -1,10 +1,10 @@
 export default function Contact() {
     return (
         <div>
-            <h1>Контакты</h1>
-            <p>Наш адрес: г. Москва, ул. Примерная, д. 1</p>
-            <p>Телефон: +7 (123) 456-78-90</p>
-            <p>Email: info@example.com</p>
+            <h1>Свяжитесь с нами</h1>
+            <p>Адрес: ул. Новая, д. 10</p>
+            <p>Телефон: +7 (999) 999-99-99</p>
+            <p>Email: new-email@example.com</p>
         </div>
     );
 }
